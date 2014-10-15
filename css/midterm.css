@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+
+/****************************************
+    MOBILE FIRST
+*****************************************/
+
+*{
+	padding:0;
+	margin:0;
+    box-sizing: border-box;
+}	
+
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 15px;
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: "Dancing script", cursive; 
+    text-align: center;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: Cinzel, "times new Roman", georgia, serif;
+    
+}
+h3{
+	font-size: 2rem;
+	font-family: Cinzel, "times new Roman", georgia, serif;
+	color: #494949;	
+}
+p, li, a{
+	font-weight: 400;
+	font-family: Ubuntu, tahoma, sans-serif;
+		
+}
+p{
+	padding: 5px 15px;
+	font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: .7px
+}
+
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: #FFDB76;	
+}
+.masthead{
+}
+.nav ul{
+    background-color: #7F6E3B;
+    overflow: hidden;
+    
+}
+.navbar{
+	 
+}
+.main{
+	clear: both;
+    background-color: #CC9F21;
+    margin: 1%;
+   
+}
+.sidebar{
+    
+}
+.footer{
+}
+.two{
+    background-color: #CC9F21;
+     margin: 1%;
+}
+.three{
+    background-color: #CC9F21;
+     margin: 1%;
+}
+
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+    background-color: #7F6415;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+	/*width: 240px; 960/4 = 240  works if the layout is 960*/
+    width: 50%;
+	list-style: none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFDB75;
+	background-color: #7F6E3B;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #333;
+}
+
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: .9rem;	
+	background-color: #7F6415;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        END OF DEFAULT STYLING
+*************************************************/
+
+/*************************************
+        CONDITIONALS
+***************************************/
+
+@media all and (min-width: 500px) and (max-width: 719px){
+    
+    .navbar li{
+        width: 25%;
+	}
+    .two{
+        float: left;
+        width: 48.5%;
+        margin-top: 0;
+        margin-right: .5%
+    }
+    .three{
+        float: left;
+        width: 48.5%;
+        margin-top: 0;
+        margin-left: .5%
+    }
+    .footer{
+        clear: both;   
+    }
+   
+}
+
+@media all and (max-width: 1080px) and (min-width: 720px){
+   .navbar li{
+        width: 25%;   
+	}
+    .main{
+        float: left;
+        width: 48%;
+    }
+
+    .two{
+        float: left;
+        width: 24%;
+        margin: 1% 0;
+    }
+    .three{
+        float: left;
+        width: 24%;
+    }
+    .footer{
+        clear: both;   
+    }
+}
+
+
+@media all and (min-width: 1081px){
+    
+    .nav{
+        float: left;
+        width: 12%;
+        margin: 1% 0 1% 1%;
+    }
+   
+    .navbar li{
+        width: 100%; 
+	}
+
+    .navbar a{
+	   text-align: left;
+       
+    }
+    
+    .main{
+        clear: none;
+        float: left;
+        width: 47%;
+        margin-right: 0;
+    }
+    
+    .two{
+        float: left;
+        width: 18%;
+        margin-right: 0;
+    }
+    
+    .three{
+        float: left;
+        width: 18%;
+        margin-right: 0;
+    }
+    
+    .footer{
+        clear:both;   
+    }
+}
